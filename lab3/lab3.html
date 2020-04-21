@@ -42,13 +42,14 @@
                 geometry.rotateY(0.01);
                 geometry2.rotateX(0.02);
                 geometry2.rotateY(0.02);
-                geometry2.translate( -0.02, 0, 0 );
+
 				renderer.render(scene, camera);
 			}
             animate();
             
-            //shaders
 
+
+            //shaders
             THREE.Cache.enabled = true;
             var count = 0;
             var loader = new THREE.FileLoader();
@@ -115,6 +116,75 @@
                 }	
             }
 
+
+            //shaders 2
+            var count2 = 0;
+            var loader2 = new THREE.FileLoader();
+            var fshader2, vshader2;
+
+            loader2.load('shaders/vertexShader.vert',
+            // onLoad callback
+            function (data) {
+                    console.log(data); // output the text to the console
+                    vshader2 = data;
+                    count2 += 1;
+                    addCoolCube2(); // we will write this method
+                },
+            // onProgress callback
+            function (xhr) {
+                console.log((xhr.loaded/xhr.total * 100)+ '% loaded');
+            },
+            // onError callback
+            function (err) {
+                console.error('An error happened');
+            });
+
+
+
+            loader2.load('shaders/newFragmentShader.frag',
+            // onLoad callback
+            function (data) {
+                    console.log(data); // output the text to the console
+                    fshader2 = data;
+                    count2 += 1;
+                    addCoolCube2(); // we will write this method
+                },
+            // onProgress callback
+            function (xhr) {
+                console.log((xhr.loaded/xhr.total * 100)+ '% loaded');
+            },
+            // onError callback
+            function (err) {
+                console.error('An error happened');
+            });
+
+            var geometry3, material3, mesh2;
+
+            function addCoolCube2() {
+                if(count2 == 2) {
+                    let uniforms2 = {
+                        colorB: {type: 'vec3', value: new 
+                        THREE.Color(0xACB6E5)},
+                        colorA: {type: 'vec3', value: new 
+                        THREE.Color(0x74ebd5)}
+                    };
+
+                    geometry3 = new THREE.BoxGeometry(1, 1, 1);
+                    material3 =  new THREE.ShaderMaterial({
+                        uniforms: uniforms2,
+                        fragmentShader: fshader2,
+                        vertexShader: vshader2,
+                        precision: "mediump"
+                    });
+
+                    mesh2 = new THREE.Mesh(geometry3, material3);
+                    mesh2.position.x = 2;
+                    scene.add(mesh2);
+                }	
+            }
+
+            
+
             function animate() {
                 requestAnimationFrame(animate);
                 geometry.rotateX(0.01);
@@ -126,6 +196,11 @@
                 if(geometry1) {
                     geometry1.rotateX(0.01);
                     geometry1.rotateY(0.01);
+                    
+                }
+                if(geometry3) {
+                    geometry3.rotateX(0.01);
+                    geometry3.rotateY(0.01);
                 }
 
                 renderer.render(scene, camera);
