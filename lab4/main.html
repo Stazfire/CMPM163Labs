@@ -74,6 +74,7 @@
                             addTextureShaderCube(); // we will write this method
                             addTextureShaderCube2(); // we will write this method
                             addTextureShaderCube3();
+                            addTextureShaderCube4();
                         },
                         // onProgress callback
                         function (xhr) {
@@ -93,6 +94,7 @@
                             addTextureShaderCube(); // we will write this method
                             addTextureShaderCube2(); // we will write this method
                             addTextureShaderCube3();
+                            addTextureShaderCube4();
                         },
                         // onProgress callback
                         function (xhr) {
@@ -139,10 +141,23 @@
       				material = new THREE.ShaderMaterial({
   						uniforms: uniforms,
   						vertexShader: document.getElementById('vertexShader').textContent,
-  						fragmentShader: document.getElementById('fragmentShader').textContent
+  						fragmentShader: document.getElementById('newFragmentShader').textContent
 						});
       				mesh2 = new THREE.Mesh(geometry1, material);
       				mesh2.position.x = -2;
+					mesh2.position.y = 2;
+      				scene.add(mesh2);
+			}
+            function addTextureShaderCube4() {
+    				var uniforms = {texture1: { type: "t", value: THREE.ImageUtils.loadTexture("kirby.png")}};
+      				geometry1 = new THREE.BoxGeometry(1, 1, 1);
+      				material = new THREE.ShaderMaterial({
+  						uniforms: uniforms,
+  						vertexShader: document.getElementById('vertexShader').textContent,
+  						fragmentShader: document.getElementById('newFragmentShader2').textContent
+						});
+      				mesh2 = new THREE.Mesh(geometry1, material);
+      				mesh2.position.x = 0;
 					mesh2.position.y = 2;
       				scene.add(mesh2);
 			}
@@ -195,7 +210,18 @@
             // code for fragment shader
             uniform sampler2D texture1;
             varying vec2 vUv;
-            float tileSize = 5.0;
+            float tileSize = 3.0;
+            
+            void main() {
+                vec2 temp = vec2 ( (vUv.x * tileSize)- floor(vUv.x*tileSize), (vUv.y*tileSize)-floor(vUv.y*tileSize));
+                gl_FragColor = texture2D(texture1, temp);
+            }
+        </script>
+        <script id="newFragmentShader2" type="x-shader/x-fragment">
+            // code for fragment shader
+            uniform sampler2D texture1;
+            varying vec2 vUv;
+            float tileSize = 1.0;
             
             void main() {
                 vec2 temp = vec2 ( (vUv.x * tileSize)- floor(vUv.x*tileSize), (vUv.y*tileSize)-floor(vUv.y*tileSize));
