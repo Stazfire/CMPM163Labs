@@ -16,3 +16,15 @@ The middle cube was provided, made using three.js
 
 Last cube, rainbow cube was made with shader. I made a new fragment files and link it to the code copied from the icy cube.
 
+Lab4:
+
+https://drive.google.com/drive/folders/1P1Rqn6d4IMjCQXLPPOnBdg9Wm8vspiGO?usp=sharing
+
+Q:
+
+a: x = 7 * U
+
+b: y = 7 - 7 * V
+
+c: light gray (2,5)
+
