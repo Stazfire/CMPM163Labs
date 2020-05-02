@@ -18,7 +18,7 @@ Last cube, rainbow cube was made with shader. I made a new fragment files and li
 
 Lab4:
 
-https://drive.google.com/drive/folders/1P1Rqn6d4IMjCQXLPPOnBdg9Wm8vspiGO?usp=sharing
+https://drive.google.com/file/d/1pHwgENHTnDBqLwZTcaSpSnj4BtmrdV7B/view?usp=sharing
 
 Q:
 
