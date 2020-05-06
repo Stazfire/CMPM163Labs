@@ -28,3 +28,19 @@ b: y = 7 - 7 * V
 
 c: light gray (2,5)
 
+Lab5:
+
+Part 1:
+
+https://drive.google.com/file/d/1EI0GdhuftrWPhRCXTzOgoSji_zYqRUWq/view?usp=sharing
+
+Modifications:
+
+Change particles by reducing the radius and angle. (Modify values)
+
+Music added to Losing scene. (Added Audio Source)
+
+Various objects added. (Drag object into scene, modify values)
+
+Color and other minor changes to background and map. (Modify values)
+
