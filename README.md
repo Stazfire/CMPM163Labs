@@ -44,3 +44,22 @@ Various objects added. (Drag object into scene, modify values)
 
 Color and other minor changes to background and map. (Modify values)
 
+Lab6:
+
+https://drive.google.com/file/d/17iprR3aAPWiQZaDHI8i0HcwW6izdeh20/view?usp=sharing
+
+Point Light: light in all directions
+
+Spotlight: Conical light in one direction 
+
+Directional light: Lights the whole scene
+
+Area Light : like a side or a plane in rectangular or circular
+
+The Cylinder has brick shader with red Point Light
+
+The Cube has a tech scifi texure lit with Area Light on one side
+
+The Sphere has snow texure to look like a snowball and lit with Spotlight
+
+Finally, Directional gray light and stary sky skybox
