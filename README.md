@@ -63,3 +63,9 @@ The Cube has a tech scifi texure lit with Area Light on one side
 The Sphere has snow texure to look like a snowball and lit with Spotlight
 
 Finally, Directional gray light and stary sky skybox
+
+Lab7:
+
+Video: https://drive.google.com/file/d/1vUmEYjirv8AW7PbKnIBPvF51TNrnsDJ7/view?usp=sharing
+
+I follow the tutorial and mess around with some values to create the mountain range. I watched Brackeys' video to create the water, and I obtain the free 3d models here https://www.cgtrader.com/.
