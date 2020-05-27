@@ -69,3 +69,18 @@ Lab7:
 Video: https://drive.google.com/file/d/1vUmEYjirv8AW7PbKnIBPvF51TNrnsDJ7/view?usp=sharing
 
 I follow the tutorial and mess around with some values to create the mountain range. I watched Brackeys' video to create the water, and I obtain the free 3d models here https://www.cgtrader.com/.
+
+Lab8:
+
+Inspiration comes from residential district in London and Newyork City
+
+![mayfair-london](https://user-images.githubusercontent.com/63587556/82962629-96e80700-9f75-11ea-864d-446bfba9ce48.jpg)
+![81977080-block-of-colorful-old-apartment-buildings-in-the-east-village-of-manhattan-new-york-city-nyc](https://user-images.githubusercontent.com/63587556/82962643-a5362300-9f75-11ea-9b9a-4004a1734b0c.jpg)
+
+Here it is:
+
+![City](https://user-images.githubusercontent.com/63587556/82962680-baab4d00-9f75-11ea-8f7a-4b2d71e62af7.PNG)
+
+So I basically just follow the tutorial and then added a few lines of code to create more variety of buildings, then grab some new buildings in the asset store and stick it in.
+
+I did not help my partner. I showed and told my partner what I did.
