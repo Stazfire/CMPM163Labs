@@ -83,4 +83,4 @@ Here it is:
 
 So I basically just follow the tutorial and then added a few lines of code to create more variety of buildings, then grab some new buildings in the asset store and stick it in.
 
-I did not help my partner. I showed and told my partner what I did.
+I did not help my partner. My partner modified the tutorial code until they gotten something they like and they added different texture cubes as floor tiles for each of the buildings.
