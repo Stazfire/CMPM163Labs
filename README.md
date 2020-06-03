@@ -84,3 +84,16 @@ Here it is:
 So I basically just follow the tutorial and then added a few lines of code to create more variety of buildings, then grab some new buildings in the asset store and stick it in.
 
 I did not help my partner. My partner modified the tutorial code until they gotten something they like and they added different texture cubes as floor tiles for each of the buildings.
+
+Lab9:
+
+![Tree](https://user-images.githubusercontent.com/63587556/83610800-dfcf2b00-a534-11ea-9366-3f980b438b38.PNG)
+
+I follow this tutorial: https://www.youtube.com/watch?v=tUbTGWl-qus to make the L-System tree above.
+
+And this is my own: ![Tree](https://user-images.githubusercontent.com/63587556/83611075-52400b00-a535-11ea-9115-8999a80cf87d.PNG)
+
+I basically changed the variable of the angle of the branch as well as the length of the each branch.
+
+
+
